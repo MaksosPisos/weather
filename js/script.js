@@ -21,7 +21,7 @@ function testApi(cityName) {
         temp.textContent = `${Math.round(data.main.temp)}`; 
         feelTemp.textContent = `${Math.round(data.main.feels_like)}`;
         humidity.textContent = `${data.main.humidity}`
-        console.log(data);
+        // console.log(data);
         wind.textContent = `${data.wind.speed}`;
         // direction.style.transform = `rotate(${data.wind.deg}deg)`;
         icon.src = `./icons/${data.weather[0].icon}.png`;
@@ -29,6 +29,13 @@ function testApi(cityName) {
     })
 }
 
+const input = document.querySelector('#input');
+const button = document.querySelector('#button');
+
+button.addEventListener('click',(e) => {
+    e.preventDefault();
+    testApi(input.value);
+})
 
 
 

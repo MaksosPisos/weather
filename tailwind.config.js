@@ -3,7 +3,12 @@ module.exports = {
     './*.{html, js}'
   ],
   theme: {
-    extend: {},
+    extend: {
+      animation: {
+        
+      },
+    },
   },
   plugins: [],
+
 }
