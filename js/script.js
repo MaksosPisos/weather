@@ -13,7 +13,7 @@ fetch('https://ipapi.co/json/')
   });
 
 function testApi(cityName) {
-    const apiURL = `http://api.openweathermap.org/data/2.5/weather?appid=86095446ea62c353a352f44e0b12a207&units=metric&q=${cityName}`;
+    const apiURL = `https://api.openweathermap.org/data/2.5/weather?appid=86095446ea62c353a352f44e0b12a207&units=metric&q=${cityName}`;
     fetch(apiURL)
     .then(result => result.json())
     .then(data => {
