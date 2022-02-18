@@ -5,7 +5,7 @@ module.exports = {
   theme: {
     extend: {
       animation: {
-        
+        'bounce': 'bounce 4.5s infinite;',
       },
     },
   },
